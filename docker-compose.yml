@@ -1,0 +1,8 @@
+version: '3.6'
+
+services:
+  util:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    command: sleep 300
