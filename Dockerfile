@@ -10,4 +10,6 @@ RUN apt update && apt install -y \
     curl \
     wget \
     lsof \
+    stress \
+    tcpdump \
  && rm -rf /var/lib/apt/lists/*
