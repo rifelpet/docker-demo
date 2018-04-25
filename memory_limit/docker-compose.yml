@@ -1,0 +1,11 @@
+version: '2.2'
+
+services:
+  small:
+    build:
+      context: ../
+    container_name: small
+    command: sleep 5000
+    mem_limit: 515m
+    memswap_limit: 515m
+    mem_swappiness: 0

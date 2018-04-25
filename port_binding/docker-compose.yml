@@ -1,0 +1,9 @@
+version: '2.2'
+
+services:
+  pid_c:
+    build:
+      context: .
+    container_name: apache
+    ports:
+      - 81:80
