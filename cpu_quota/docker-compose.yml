@@ -1,0 +1,13 @@
+version: '2.2'
+
+services:
+  util:
+    build:
+      context: ../
+    command: stress -c 1
+    cpu_quota: 50000
+  stress:
+    build:
+      context: ../
+    command: stress -c 1
+    cpu_quota: 100000

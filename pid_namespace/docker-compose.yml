@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  pid_c:
+    build:
+      context: ../
+    container_name: pid_c
+    command: sleep 5001
+  pid_h:
+    build:
+      context: ../
+    container_name: pid_h
+    command: sleep 5000
+    pid: host

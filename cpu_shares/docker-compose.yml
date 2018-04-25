@@ -1,0 +1,13 @@
+version: '2.2'
+
+services:
+  util:
+    build:
+      context: ../
+    command: stress -c 1
+    cpu_shares: 1024
+  stress:
+    build:
+      context: ../
+    command: stress -c 1
+    cpu_shares: 1024
