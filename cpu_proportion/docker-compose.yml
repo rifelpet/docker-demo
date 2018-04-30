@@ -4,10 +4,15 @@ services:
   stress1:
     build:
       context: ../
-    container_name: stress1
+    container_name: cpu_proportion_stress1
     command: stress -c 1
   stress2:
     build:
       context: ../
-    container_name: stress2
+    container_name: cpu_proportion_stress2
     command: stress -c 2
+  stress3:
+    build:
+      context: ../
+    container_name: cpu_proportion_stress3
+    command: stress -c 1

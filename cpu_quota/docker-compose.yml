@@ -1,13 +1,17 @@
 version: '2.2'
 
 services:
-  util:
+  stress1:
     build:
       context: ../
     command: stress -c 1
+    container_name: cpu_quota_stress1
     cpu_quota: 50000
-  stress:
+    cpu_period: 100000
+  stress2:
     build:
       context: ../
     command: stress -c 1
+    container_name: cpu_quota_stress2
     cpu_quota: 100000
+    cpu_period: 100000

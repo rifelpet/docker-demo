@@ -1,13 +1,15 @@
 version: '2.2'
 
 services:
-  util:
+  stress1:
     build:
       context: ../
-    command: stress -c 1
-    cpu_shares: 1024
-  stress:
+    command: stress -c 2
+    container_name: cpu_shares_stress1
+    cpu_shares: 512
+  stress2:
     build:
       context: ../
-    command: stress -c 1
+    command: stress -c 2
+    container_name: cpu_shares_stress2
     cpu_shares: 1024
