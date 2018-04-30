@@ -5,7 +5,15 @@ services:
     build:
       context: ../
     container_name: small
-    command: sleep 5000
+    command: stress -m 2
+    mem_limit: 515m
+    memswap_limit: 515m
+    mem_swappiness: 0
+  crash:
+    build:
+      context: ../
+    container_name: crash
+    command: stress -m 3
     mem_limit: 515m
     memswap_limit: 515m
     mem_swappiness: 0
