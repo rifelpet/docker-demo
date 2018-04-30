@@ -12,4 +12,5 @@ RUN apt update && apt install -y \
     lsof \
     stress \
     tcpdump \
+    vim \
  && rm -rf /var/lib/apt/lists/*
