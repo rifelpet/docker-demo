@@ -1,7 +1,7 @@
 version: '2.2'
 
 services:
-  pid_c:
+  apache:
     build:
       context: .
     container_name: apache
