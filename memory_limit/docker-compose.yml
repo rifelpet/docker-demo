@@ -5,7 +5,7 @@ services:
     build:
       context: ../
     container_name: small
-    command: stress -m 2
+    command: stress --vm-hang 60 -m 2
     mem_limit: 515m
     memswap_limit: 515m
     mem_swappiness: 0
@@ -13,7 +13,7 @@ services:
     build:
       context: ../
     container_name: crash
-    command: stress -m 3
+    command: stress --vm-hang 60 -m 3
     mem_limit: 515m
     memswap_limit: 515m
     mem_swappiness: 0
