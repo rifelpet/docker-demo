@@ -1,0 +1,8 @@
+version: '2.2'
+
+services:
+  myapp:
+    image: jenkins/jenkins:2.119
+    ports:
+      - 3000:8080
+
