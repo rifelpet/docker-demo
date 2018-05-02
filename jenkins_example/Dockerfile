@@ -1,3 +1,4 @@
 
 FROM jenkins/jenkins:2.119
-RUN apt-get update && apt-get install vim
+RUN apt-get -q update && apt-get -q install -y vim
+
