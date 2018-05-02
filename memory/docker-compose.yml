@@ -1,0 +1,8 @@
+version: '2.2'
+
+services:
+  big:
+    build:
+      context: ../
+    container_name: big
+    command: stress --vm-hang 60 -m 20
