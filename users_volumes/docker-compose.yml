@@ -2,13 +2,13 @@ version: '2.2'
 
 services:
   uid1000:
-    image: jenkins:alpine
+    image: jenkins/jenkins:alpine
     container_name: uid1000
     entrypoint: sleep 5001
     volumes:
       - /tmp:/host/tmp
   uid1234:
-    image: jenkins:alpine
+    image: jenkins/jenkins:alpine
     container_name: uid1234
     user: "1234"
     entrypoint: sleep 5001
